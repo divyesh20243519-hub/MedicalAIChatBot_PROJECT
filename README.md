@@ -1,6 +1,6 @@
 # Medical Vision AI Assistant
 
-**LIVE DEMO** : https://medicalaichatbot-project.onrender.com[0m
+**LIVE DEMO** : https://medicalaichatbot-project.onrender.com
 
 This project is a web application built with FastAPI that allows users to upload medical images and ask questions about them in natural language. The application sends the image and query to a vision-language model (Qwen3.6) through the Groq API and displays the generated response.
 The project is intended for simple educational and informational medical queries. It is **not** a substitute for professional medical advice, diagnosis, or treatment.
