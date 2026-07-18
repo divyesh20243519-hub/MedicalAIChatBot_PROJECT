@@ -33,9 +33,9 @@ if not GROQ_API_KEY:
 
 # raise -> to throw an error when something goes wrong
 
-@app.get("/", response_class=HTMLResponse) # when user visits '/' route , we want to return an HTML page
+@app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse(request, "index.html", {})
 
 # our response_class is HTMLResponse because we want FastAPI to return an html file not JSON [default]. since its a website/webpage.
 # returning as JSON would show user raw HTML code instead of rendering the webpage.
